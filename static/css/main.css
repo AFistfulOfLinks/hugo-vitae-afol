@@ -246,7 +246,6 @@ table th {
 #social nav ul {
   justify-content: center;
   display: flex;
-  flex-wrap: wrap;
 }
 
 #social nav li {
