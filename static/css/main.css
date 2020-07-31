@@ -130,8 +130,7 @@ blockquote {
 }
 
 blockquote cite {
-    font-size: 70%;
-    opacity: .8;
+    font-style: normal;
 }
 
 blockquote em {
@@ -317,13 +316,13 @@ table th {
     font-weight: bold;
 }
 
+.post-header .matter .single-link p.author {
+    margin: 0;
+}
+
 .post .title.small {
     margin: 0 0 10px 0;
     font-family: "Roboto Slab Regular", serif;
-}
-
-.post .post-header {
-    margin-bottom: 30px;
 }
 
 .post .draft-label {
@@ -360,6 +359,18 @@ table th {
 
 .list .posts .post-header .meta {
     margin-bottom: 0;
+}
+
+.posts.flat .post h2 {
+    font-size: 1.6rem;
+}
+
+main article.single-link {
+    margin-bottom: 3rem;
+}
+
+main article.single-link:last-child {
+    margin-bottom: unset;
 }
 
 .pagination {
@@ -480,6 +491,12 @@ p code {
   background: #F1F1F1;
 }
 
+p.edition {
+    font-style: italic;
+    font-weight: bold;
+    text-align: right;
+}
+
 @media screen and (max-width: 800px) {
   body {
     margin: 0 auto;
@@ -494,6 +511,7 @@ p code {
     font-size: 1.6rem;
   }
 
+  .posts.flat .post h2,
   h3 {
     font-size: 1.4rem;
   }
