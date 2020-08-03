@@ -458,6 +458,15 @@ main ul.posts li:last-child article.single-link {
   width: 80%;
 }
 
+.tags a::after {
+    content: " - ";
+    color: rgb(51, 51, 51);
+}
+
+.tags a:last-child::after {
+    content: unset;
+}
+
 .taxosfloating_left {
   float: left;
   width: 20%;
