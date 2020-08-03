@@ -146,6 +146,12 @@ blockquote:before {
 	top: -1rem;
 }
 
+blockquote::after {
+  content: '”';
+  right: -5rem;
+  bottom: 1rem;
+}
+
 blockquote cite {
     font-style: normal;
 }
