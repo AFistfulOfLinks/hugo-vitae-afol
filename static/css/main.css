@@ -131,8 +131,8 @@ blockquote {
   padding-left: 20px;
 }
 
-blockquote:before,
-blockquote:after {
+blockquote::before,
+blockquote::after {
 	position: absolute;
 	color: #f1efe6;
 	font-size: 4rem;
@@ -140,7 +140,7 @@ blockquote:after {
 	height: 4rem;
 }
 
-blockquote:before {
+blockquote::before {
 	content: '“';
 	left: -1rem;
 	top: -1rem;
@@ -547,8 +547,8 @@ p.edition {
 	  padding-left: 20px;
 	}
 
-	blockquote:before,
-	blockquote:after {
+	blockquote::before,
+	blockquote::after {
 		position: absolute;
 		color: #f1efe6;
 		font-size: 4rem;
@@ -556,7 +556,7 @@ p.edition {
 		height: 4rem;
 	}
 
-	blockquote:before {
+	blockquote::before {
 		content: '“';
 		left: -1rem;
 		top: -1rem;
