@@ -122,15 +122,43 @@ textarea {
   resize: vertical;
 }
 
+
 blockquote {
-  margin-left: 1rem;
   font-size: 1.2rem;
-  border-left: 2px solid #3700FF;
+  line-height: 1.4;
+  position: relative;
+  margin-left: 1rem;
   padding-left: 20px;
 }
 
+blockquote::before,
+blockquote::after {
+	position: absolute;
+	color: #f1efe6;
+	font-size: 4rem;
+	width: 4rem;
+	height: 4rem;
+    z-index: -1;
+}
+
+blockquote::before {
+	content: '“';
+	left: -1rem;
+	top: -1rem;
+}
+
+blockquote::after {
+  content: '”';
+  right: -2rem;
+  bottom: 0;
+  text-align: right;
+}
+
 blockquote cite {
+    display: block;
+    margin-top: -1em;
     font-style: normal;
+    text-align: right;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -514,13 +542,6 @@ p.edition {
 
   h4 {
     font-size: 1rem;
-  }
-
-  blockquote {
-    margin-left: 1rem;
-    font-size: 1rem;
-    border-left: 2px solid #3700FF;
-    padding-left: 20px;
   }
 
   table {
