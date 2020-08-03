@@ -148,12 +148,16 @@ blockquote::before {
 
 blockquote::after {
   content: '”';
-  right: -5rem;
-  bottom: 1rem;
+  right: -2rem;
+  bottom: 0;
+  text-align: right;
 }
 
 blockquote cite {
+    display: block;
+    margin-top: -1em;
     font-style: normal;
+    text-align: right;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -538,35 +542,6 @@ p.edition {
   h4 {
     font-size: 1rem;
   }
-
-	blockquote {
-	  font-size: 1.2rem;
-	  line-height: 1.4;
-	  position: relative;
-	  margin-left: 1rem;
-	  padding-left: 20px;
-	}
-
-	blockquote::before,
-	blockquote::after {
-		position: absolute;
-		color: #f1efe6;
-		font-size: 4rem;
-		width: 4rem;
-		height: 4rem;
-	}
-
-	blockquote::before {
-		content: '“';
-		left: -1rem;
-		top: -1rem;
-	}
-
-	blockquote::after {
-	  content: '”';
-	  right: -5rem;
-	  bottom: 1rem;
-	}
 
   table {
     -ms-overflow-style: -ms-autohiding-scrollbar;
