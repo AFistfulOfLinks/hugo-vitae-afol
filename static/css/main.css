@@ -387,13 +387,14 @@ table th {
 
 .posts.flat .post h2 {
     font-size: 1.6rem;
+    margin-top: 0;
 }
 
 main article.single-link {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
-main article.single-link:last-child {
+main ul.posts li:last-child article.single-link {
     margin-bottom: unset;
 }
 
