@@ -122,11 +122,28 @@ textarea {
   resize: vertical;
 }
 
+
 blockquote {
-  margin-left: 1rem;
   font-size: 1.2rem;
-  border-left: 2px solid #3700FF;
+  line-height: 1.4;
+  position: relative;
+  margin-left: 1rem;
   padding-left: 20px;
+}
+
+blockquote:before,
+blockquote:after {
+	position: absolute;
+	color: #f1efe6;
+	font-size: 4rem;
+	width: 4rem;
+	height: 4rem;
+}
+
+blockquote:before {
+	content: '“';
+	left: -1rem;
+	top: -1rem;
 }
 
 blockquote cite {
