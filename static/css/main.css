@@ -138,6 +138,7 @@ blockquote::after {
 	font-size: 4rem;
 	width: 4rem;
 	height: 4rem;
+    z-index: -1;
 }
 
 blockquote::before {
