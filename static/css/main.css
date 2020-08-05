@@ -531,6 +531,46 @@ p.edition {
     text-align: right;
 }
 
+#editors .person img {
+    border-radius: 100%;
+}
+
+#editors .person ul {
+    padding-left: 0;
+    list-style: none;
+}
+
+#editors .person ul li a::before {
+    font-family: 'Font Awesome 5 Free';
+    content: "\f0c1";
+    font-weight: 900;
+    padding-right: 10px;
+    color: #333;
+}
+
+#editors .person ul li a[href*="twitter"]::before {
+    font-family: 'Font Awesome 5 Brands';
+    content: "\f099";
+    font-weight: 400;
+}
+
+#editors .person ul li a[href*="amazon"]::before {
+    font-family: 'Font Awesome 5 Brands';
+    content: "\f270";
+    font-weight: 400;
+}
+
+@media screen and (min-width: 801px) {
+    #editors {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #editors .person {
+        width: 45%;
+    }
+}
+
 @media screen and (max-width: 800px) {
   body {
     margin: 0 auto;
