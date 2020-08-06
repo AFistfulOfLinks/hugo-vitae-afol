@@ -437,6 +437,7 @@ main ul.posts li:last-child article.single-link {
 
 .tag-cloud a {
     margin-right: 15px;
+    white-space: nowrap;
 }
 
 .author {
