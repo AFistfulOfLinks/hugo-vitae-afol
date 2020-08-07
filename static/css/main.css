@@ -577,6 +577,14 @@ p.edition {
     }
 }
 
+#load-comments {
+    display: none;
+    margin: 0 auto 1em auto;
+    min-width: 170px;
+    width: 10vw;
+    height: 3em;
+}
+
 @media screen and (max-width: 800px) {
   body {
     margin: 0 auto;
