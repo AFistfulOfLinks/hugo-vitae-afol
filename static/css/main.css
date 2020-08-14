@@ -398,8 +398,12 @@ main article.single-link:first-of-type {
     margin-top: 5rem;
 }
 
-main ul.posts li:last-child article.single-link {
-    margin-bottom: unset;
+main ul.posts article.single-link:first-of-type {
+    margin-top: calc(5rem - 20px);
+}
+
+main ul.posts article.single-link {
+    margin-bottom: 0;
 }
 
 .pagination {
