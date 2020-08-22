@@ -42,16 +42,23 @@
       {{ with .Site.Author.email }}<author>{{.}}{{ with $.Site.Author.name }} ({{.}}){{end}}</author>{{end}}
       <guid>{{ .Permalink }}</guid>
       <description>
-      {{ if isset .Params "description" }}
-      {{ .Description }}
-      {{ else if gt (len .Plain) 120 }}
-      {{ slicestr .Plain 0 120 | htmlUnescape }}...
-      {{ else }}
-      {{ .Plain | htmlUnescape }}
-      {{ end }}
+      {{- if isset .Params "description" -}}
+        {{- .Description -}}
+      {{- else if gt (len .Plain) 120 -}}
+        {{- slicestr .Plain 0 120 | htmlUnescape -}}...
+      {{- else -}}
+        &lt;ol&gt;
+        {{- range $link := .Params.links -}}
+            {{- $linkref := print "/links/" $link -}}
+            {{- with $.Site.GetPage $linkref -}}
+                &lt;li&gt;{{ .Title }}&lt;/li&gt;
+            {{- end -}}
+        {{- end -}}
+        &lt;/ol&gt;
+      {{- end -}}
       </description>
     </item>
-    {{ end -}}
-    {{ end }}
+    {{- end -}}
+    {{- end -}}
   </channel>
 </rss>
